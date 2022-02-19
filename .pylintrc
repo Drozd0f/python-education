@@ -1,0 +1,11 @@
+[MASTER]
+
+ignore=Basics
+
+jobs=4
+
+[REPORTS]
+
+evaluation=10.0 - ((float(5 * error + warning + refactor + convention) / statement) * 10)
+
+score=yes
