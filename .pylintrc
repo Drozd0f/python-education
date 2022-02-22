@@ -1,6 +1,8 @@
 [MASTER]
 
-ignore=Basics
+init-hook='import sys; sys.path.append("Python/hangman")'
+
+ignore=Basics, venv
 
 jobs=4
 
@@ -9,3 +11,24 @@ jobs=4
 evaluation=10.0 - ((float(5 * error + warning + refactor + convention) / statement) * 10)
 
 score=yes
+
+# delete
+disable=
+    E1101, # Module 'os' has no 'startfile' member (no-member) for Windows
+    W1203, # logging-fstring-interpolation
+
+[BASIC]
+
+argument-naming-style=snake_case
+
+attr-naming-style=snake_case
+
+class-attribute-naming-style=any
+
+class-naming-style=PascalCase
+
+const-naming-style=UPPER_CASE
+
+docstring-min-length=-1
+
+function-naming-style=snake_case
