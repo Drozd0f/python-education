@@ -18,6 +18,8 @@ disable=
     W1203, # logging-fstring-interpolation
     R0903, # too-few-public-methods
 
+    W0107, # Unnecessary pass statement
+
 [BASIC]
 
 argument-naming-style=snake_case
