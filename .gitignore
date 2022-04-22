@@ -11,5 +11,8 @@ venv/
 # CSV file
 *.csv
 
+# LOG file
+*.log
+
 # ide
 .idea

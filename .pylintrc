@@ -1,8 +1,8 @@
 [MASTER]
 
-init-hook='import sys; sys.path.append("Python/hangman")'
+init-hook='import sys; sys.path.append("Python/tic_tac_toe")'
 
-ignore=Basics, venv
+ignore=Basics, venv, hangman, iterables
 
 jobs=4
 
