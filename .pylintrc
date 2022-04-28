@@ -17,8 +17,8 @@ disable=
     E1101, # Module 'os' has no 'startfile' member (no-member) for Windows
     W1203, # logging-fstring-interpolation
     R0903, # too-few-public-methods
-
     W0107, # Unnecessary pass statement
+    R0201, # Method could be a function (no-self-use)
 
 [BASIC]
 
