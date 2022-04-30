@@ -1,6 +1,11 @@
 # Python status
 
-[![Lint](https://github.com/Drozd0f/python-education/actions/workflows/linter.yml/badge.svg)](https://github.com/Drozd0f/python-education/actions/workflows/linter.yml)
-[![Unit testing](https://github.com/Drozd0f/python-education/actions/workflows/tests.yml/badge.svg)](https://github.com/Drozd0f/python-education/actions/workflows/tests.yml)
+[![Python Lint](https://github.com/Drozd0f/python-education/actions/workflows/python_linter.yml/badge.svg)](https://github.com/Drozd0f/python-education/actions/workflows/python_linter.yml)
+[![Python Test](https://github.com/Drozd0f/python-education/actions/workflows/python_tests.yml/badge.svg)](https://github.com/Drozd0f/python-education/actions/workflows/python_tests.yml)
+
+# Algorithms & Data Structures status
+
+[![Algorithms & Data Structures Lint](https://github.com/Drozd0f/python-education/actions/workflows/algor_linter.yml/badge.svg)](https://github.com/Drozd0f/python-education/actions/workflows/algor_linter.yml)
+[![Algorithms & Data Structures Test](https://github.com/Drozd0f/python-education/actions/workflows/algor_tests.yml/badge.svg)](https://github.com/Drozd0f/python-education/actions/workflows/algor_tests.yml)
 
 # Salut, le Monde!
