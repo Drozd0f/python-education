@@ -1,3 +1,15 @@
+COMPOSE ?= docker-compose -f database/docker-compose.yml
+
+run: build
+	$(COMPOSE) up -d
+
+build:
+	$(COMPOSE) build
+
+rm:
+	$(COMPOSE) stop
+	$(COMPOSE) rm -f
+
 lint-Python:
 	pylint --rcfile=.pylintrc Python/
 
