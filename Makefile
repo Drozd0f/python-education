@@ -10,6 +10,10 @@ rm:
 	$(COMPOSE) stop
 	$(COMPOSE) rm -f
 
+copy_csv:
+	@docker cp database/csv_tables/ database-db-1:/usr/src/csv_tables
+	@echo "Copy is done"
+
 lint-Python:
 	pylint --rcfile=.pylintrc Python/
 
