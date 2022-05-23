@@ -2,9 +2,8 @@ name: Algorithms & Data Structures Lint
 
 on:
   push:
-    branches:
-      - "*"
-  pull_request:
+    paths:
+      - 'algorithms_and_data_structure/**'
 
 jobs:
   build:
