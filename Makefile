@@ -25,3 +25,6 @@ test-unittests:
 
 test-algorithms_and_data_structure:
 	@cd algorithms_and_data_structure; python -m pytest -vv
+
+lint-de:
+	pylint --rcfile=.pylintrc data_engineering/

@@ -1,0 +1,30 @@
+name: Algorithms & Data Structures Lint
+
+on:
+  push:
+    paths:
+      - 'data_engineering/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version:
+          - "3.x"
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pylint
+        if [ -f data_engineering/requirements.txt ]; 
+        then pip install -r data_engineering/requirements.txt; 
+        fi
+    - name: Analysing the code with pylint
+      run: |
+        make lint-de
