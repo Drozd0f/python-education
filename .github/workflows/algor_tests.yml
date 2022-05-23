@@ -1,6 +1,9 @@
 name: Algorithms & Data Structures Test
 
-on: push
+on:
+  push:
+    paths:
+      - 'algorithms_and_data_structure/tests/**'
 
 jobs:
   unittesting:
