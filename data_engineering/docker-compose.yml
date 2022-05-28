@@ -1,0 +1,27 @@
+version: "3"
+
+services:
+    data_services:
+        command: bash -c "python3 /de_intro/main.py"
+        build:
+            dockerfile: Dockerfile
+        env_file:
+            - intro.env
+
+    database:
+        image: postgres:10.4
+        ports:
+            - "5432:5432"
+        env_file:
+            - intro.env
+
+    s3:
+        image: minio/minio
+        ports:
+            - "9000:9000"
+            - "9001:9001"
+        volumes:
+            - ./data:/data
+        env_file:
+            - intro.env
+        command: minio server /data --console-address ":9001"
